@@ -16,15 +16,17 @@
         //     Código o logica a ejecutar en cada iteración
         // }
 
-        // Ejercicio 1: Usar for para sumar números
+        // Ejercicio 3: Buscar un número en un array con for
 
-        let numeros = [2, 4, 6, 8, 10];
-        let suma1 = 0;
+        let numeros1 = [1, 5, 7, 9, 23, 50];
+        let numeroBuscado = 23;
 
-        for (let i = 0; i <= numeros.length; i++) {
-            suma1 += numeros[i];
+        for (let i = 0; i < numeros1.length; i++) {
+            if (numeros1[i] === numeroBuscado) {
+                console.log("el numero buscado es: " + numeroBuscado);
+                break;
+            }
         }
-        console.log("La suma de los numeros del array es: " + suma1);
     </script>
 </body>
 
