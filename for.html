@@ -16,20 +16,14 @@
         //     Código o logica a ejecutar en cada iteración
         // }
 
-        // Sumar números del 1 al N
+        //Mostrar números pares en una lista
 
-        let N = prompt("Ingresa un número:");
+        for (let i = 1; i <= 20; i++) {
 
-        N = Number(N);
-        let suma = 0;
-
-
-        for (let i = 1; i <= N; i++) {
-            suma += i;
+            if (i % 2 === 0) {
+                console.log(i);
+            }
         }
-
-
-        console.log("La suma de los números del 1 al " + N + " es: " + suma);
     </script>
 </body>
 
