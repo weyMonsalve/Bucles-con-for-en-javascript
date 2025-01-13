@@ -16,19 +16,19 @@
         //     Código o logica a ejecutar en cada iteración
         // }
 
-        // Ejercicio 3: Encontrar el primer número mayor que 25 con for
-        debugger
+        // Ejercicio 4: Encontrar el número mayor de un arreglo (array) con for
 
-        let numeros = [3, 6, 9, 25, 15, 88, 1, 45];
-        let numeroMayor;
 
-        for (let i = 0; i < numeros.length; i++) {
-            if (numeros[i] > 25) {
+        const numeros = [10, 30, 15, 45, 20, 60];
+        let numeroMayor = numeros[0];
+
+        for (let i = 1; i < numeros.length; i++) {
+            if (numeros[i] > numeroMayor) {
                 numeroMayor = numeros[i];
-                break;
+
             }
         }
-        console.log("el primer numero mayor que 25 en el array es: " + numeroMayor);
+        console.log("el numero mayor del array es: " + numeroMayor);
     </script>
 </body>
 
