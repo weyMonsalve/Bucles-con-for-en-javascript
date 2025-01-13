@@ -16,14 +16,15 @@
         //     Código o logica a ejecutar en cada iteración
         // }
 
-        // Ejercicio: Crear un array con números del 1 al 10 usando for
+        // Ejercicio: Usar for para invertir un string
 
-        let numeros = [];
+        let original = "Hola Mundo";
+        let invertido = " ";
 
-        for (let i = 1; i <= 15; i++) {
-            numeros.push(i);
+        for (let i = original.length - 1; i >= 0; i--) {
+            invertido += original[i];
         }
-        console.log(numeros);
+        console.log(invertido);
     </script>
 </body>
 
