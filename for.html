@@ -16,14 +16,18 @@
         //     Código o logica a ejecutar en cada iteración
         // }
 
-        //Mostrar números pares en una lista
+        //Mostrar números pares en un array
+
+        let numerosPares = [];
+
 
         for (let i = 1; i <= 20; i++) {
 
             if (i % 2 === 0) {
-                console.log(i);
+                numerosPares.push(i);
             }
         }
+        console.log("Números pares entre 1 y 20:", numerosPares);
     </script>
 </body>
 
