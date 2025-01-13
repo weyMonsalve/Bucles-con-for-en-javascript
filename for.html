@@ -16,19 +16,19 @@
         //     Código o logica a ejecutar en cada iteración
         // }
 
-        // Ejercicio 4: Encontrar el número mayor de un arreglo (array) con for
+        // Ejercicio: Contar letras en una palabra usando for
 
+        const palabra = "Hola, Mundo!";
+        let contadorDeLetras = 0;
 
-        const numeros = [10, 30, 15, 45, 20, 60];
-        let numeroMayor = numeros[0];
-
-        for (let i = 1; i < numeros.length; i++) {
-            if (numeros[i] > numeroMayor) {
-                numeroMayor = numeros[i];
-
+        for (let i = 0; i < palabra.length; i++) {
+            const caracter = palabra[i];
+            if (/[a-zA-Z]/.test(caracter)) {
+                contadorDeLetras++;
             }
         }
-        console.log("el numero mayor del array es: " + numeroMayor);
+
+        console.log(`La palabra "${palabra}" tiene ${contadorDeLetras} letras.`);
     </script>
 </body>
 
